@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Inter';
+}
+
+.body{
+    
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.side-parent{
+    position: relative;
+    width: 250px;
+}
+
+.side-parent .side-bar{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background-color: #f3f3f3;
+    gap: 60px;
+    padding: 16px 8px 0px 24px;
+    position: fixed;
+}
+
+.page{
+    
+    width: calc(100vw - 250px);
+    background-color: rgb(253, 253, 253);
+    padding: 0px 24px 0px 24px;
+    overflow-x: hidden;
+}
+
+.nav-parent{
+    position: relative;
+    height: 56px;
+    width: 100%;
+    
+
+}
+
+.nav-parent .nav-bar{
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 250px);
+    justify-content: end;
+    padding: 0px 24px 0px 0px;
+    
+    
+}
+
+.action-button-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 12px 0px;
+    gap: 16px;
+    justify-content: end;
+
+
+}
+
+.action-button-top > button {
+    width: fit-content;
+    padding: 8px 36px;
+    background-color: #ebecec;
+    color: #1b1b1b;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 60px;
+    align-items: center;
+    height: fit-content;
+    align-items: center;
+}
+
+.logo-container{
+    width: 100%;
+    
+    
+}
+.icon-menu{
+    font-size: 24px;
+
+}
+
+.logo{
+    font-size: 18px;
+}
+
+.side-bar .menu{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.side-bar .menu .btn{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 8px;
+    color: #1b1b1b;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f3f3f3;
+    text-wrap: nowrap;
+    text-align:start ;
+    align-content: start;
+    font-size: 16px;
+    font-weight: 400;
+    color: #686a6e;
+
+}
+.side-bar .menu .btn .btn-icon{
+    font-size: 18px;
+    color: #73767a;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px 0px 0px;
+    height: calc(1024px - 56px);
+    overflow-x: hidden;
+    gap: 48px;
+}
+
+.top-dash{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.charts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+}
+
+.chart{
+    flex: 1;
+    height: 250px;
+    border: 1.5px solid #c9c9c9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.table-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 24px;
+}
+
+.title-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0px;
+}
+
+.title-box .title{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #1b1b1b;
+}
+
+.table-section{
+    width: 100%;
+    height: fit-content;
+
+}
+
+.table-users{
+    width: 100%;
+   background-color: #f8f8f8;
+}
+
+
+.table-users .head-table{
+    
+    border-bottom: 5px solid #000000 ;
+}
+
+.row-head{
+    width: 100%;
+    height: 40px;
+}
+
