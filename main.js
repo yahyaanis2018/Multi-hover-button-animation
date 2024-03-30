@@ -1,4 +1,15 @@
 
+let length;
+
+length = 9;
+
+let i = 0;
+while (i < length){console.log("how are u");}
+
+  
+
+let numbers = [4 , 52 , 845 , 61]
+console.log(numbers.length);
 
 
 //Pie chart
@@ -14,9 +25,9 @@ const data = {
       data: [20, 45, 93, 100, 48, 71],
       backgroundColor: [
         "rgb(250, 104, 80)",
-        "rgb(54, 162, 235)",
+        "#0dca72",
         "rgb(255, 205, 86)",
-        "rgb(255, 99, 132)",
+        "rgb(255, 99, 0)",
         "rgb(255, 205, 36)",
         "rgb(255, 109, 132)",
       ]
@@ -70,21 +81,21 @@ const data1 = {
       label: 'Dataset 1',
       data: [10, 30, 50, 20, 25, 44, -10],
       borderColor:[
-        "rgb(0, 0, 0)",
+        "#0dca72",
       ],
       backgroundColor: [
-        "rgb(250, 104, 80)",
-        "rgb(54, 162, 235)",
+        "#0dca72",
+        "#1395ff",
       ],
     },
     {
       label: 'Dataset 2',
       data: [100, 33, 22, 19, 11, 49, 30],
       borderColor: [
-        "rgb(0, 0, 0)",
+        "#1395ff",
       ],
       backgroundColor: [
-        "rgb(0, 0, 0)",
+        "#1395ff",
       ],
     }
   ]
@@ -131,10 +142,10 @@ const config1 = {
         label: 'Dataset 1',
         data: [10, 40, 40, 90, 80, 80, 120],
         borderColor: [
-          "rgb(250, 104, 80)",
+          "#0dca72",
         ],
         backgroundColor: [
-          "rgb(30, 40, 80)",
+          "#1395ff",
         ],
         stack: 'combined',
         type: 'bar'
@@ -143,10 +154,10 @@ const config1 = {
         label: 'Dataset 2',
         data: [60, 20, 40, 60, 80, 80, 10],
         borderColor: [
-          "rgb(40, 20, 60)",
+          "#0dca72",
         ],
         backgroundColor: [
-          "rgb(80, 50, 60)",
+          "#0dca72",
         ],
         stack: 'combined'
       }

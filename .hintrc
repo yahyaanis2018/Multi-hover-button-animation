@@ -9,6 +9,9 @@
     "not firefox <= 121"
   ],
   "hints": {
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "axe/forms": "off",
+    "axe/aria": "off",
+    "button-type": "off"
   }
 }

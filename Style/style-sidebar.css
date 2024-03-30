@@ -27,7 +27,7 @@ html{
     flex-direction: column;
     width: 250px;
     height: 100vh;
-    background-color: #f3f3f3;
+    background-color: #1395ff;
     gap: 60px;
     padding: 16px 8px 0px 24px;
     position: fixed;
@@ -108,6 +108,7 @@ html{
 
 .logo{
     font-size: 18px;
+    color: #ffffff;
 }
 
 .side-bar .menu{
@@ -118,7 +119,9 @@ html{
     flex-direction: column;
     gap: 16px;
 }
-
+.burger{
+    color: #ffffff;
+}
 .side-bar .menu .btn{
     display: flex;
     flex-direction: row;
@@ -130,18 +133,18 @@ html{
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
-    background-color: #f3f3f3;
+    background-color: #1395ff;
     text-wrap: nowrap;
     text-align:start ;
     align-content: start;
     font-size: 16px;
     font-weight: 400;
-    color: #686a6e;
+    color: #ffffff;
 
 }
 .side-bar .menu .btn .btn-icon{
     font-size: 18px;
-    color: #73767a;
+    color: #ffffff;
 
 }
 
@@ -159,6 +162,29 @@ html{
     flex-direction: column;
     gap: 16px;
 }
+
+
+.Title-parent{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.hashtag{
+    color: #1395ff;
+    display: block;
+}
+
+
+
+.Title-parent:hover .hashtag{
+    display: block;
+    animation-duration: 0.3ms;
+    animation-timing-function: ease-out;
+}
+
+
 .charts{
     display: flex;
     flex-direction: row;
@@ -188,6 +214,9 @@ html{
 .title-box{
     width: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
     justify-content: flex-start;
     padding: 8px 0px;
 }
@@ -205,18 +234,108 @@ html{
 }
 
 .table-users{
-    width: 100%;
+   border-collapse: collapse;
+   width: 100%;
    background-color: #f8f8f8;
+   border-radius: 8px;
+   padding: 12px;
+   align-items: center;
 }
 
 
 .table-users .head-table{
-    
-    border-bottom: 5px solid #000000 ;
+    border-bottom: 1px solid #000000 ;
 }
 
 .row-head{
     width: 100%;
-    height: 40px;
+    height: fit-content; 
+    
+}
+
+.row-head .head-title{
+    font-size: 16px;
+    padding: 16px 0px;
+    width: fit-content;
+    text-align: start;
+}
+
+.cell{
+    padding: 12px 0px;
+    width: 20%;
+    align-content: center;
+}
+
+.check{
+    width: 100%;
+}
+.user-box{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    width: fit-content;
+}
+
+.avatar{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-info .email{
+    font-size: 14px;
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.user-info .date{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8c959b;
+}
+
+.status{
+    background-color: #0dca7220;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4;
+    color: #0dca72 ;
+    padding: 8px 12px;
+    border-radius: 16px;
+    
+
+}
+
+.point{
+    display: inline-block;
+    background-color: #0dca72;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+
+}
+
+
+.user-name{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+.cancel{
+    font-size: 16px;
+    color: rgb(241, 53, 91);
 }
 
